@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <nav>
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href=""> Menu</a></li>
+                <li><a href=""> FAQ</a></li>
+                <li><a href=""> Contact</a></li>
+            </ul>
+        </nav>
+        </div>  
+   </div>
+   <div class="wd">
+        <h1> Welcome to Restaurant Menantea</h1>
+        <h4> <i>Pesan makanan sekarang, dengan berkualitas halal 100% , aman, dijamin cita rasanya.</i></h4>
+        <h2> Nomor WA Kami: 087654398754. Pesan Sekarang</h2>
+    <div class="opt">
+        <form action="" method="post">
+        <input type="button" value="ORDER NOW">
+        </form>
+</div>
+</div>
+<script>
+    $(function(){
+    var image = $(".mainmenu").find('img').attr('src');
+    $(".mainmenu a").mouseover(function(){
+    var newimg = $(this).attr('data-image');
+    $(this).parent().find('img').attr("src", newimg);
+    });
+    });
+</script>
+</body>
+</html>
